@@ -1,13 +1,13 @@
-def str_sort(str):
-    
-    str = str.lower()
-    str = str.split(' ')
-    str = sorted(str, key=len)
-    str = " ".join(str)
-    str = str.capitalize()
+def sort_sentence(sentence):
+    sentence = sentence.lower()
+    sentence = sentence.split(' ')
+    sentence = sorted(sentence, key=len)
+    sentence = " ".join(sentence)
+    sentence = sentence.capitalize()
 
-    return str
+    return sentence
 
-if __name___=='__main__':
-    str = "Keep calm and carry on"
-    print(str_sort(str))
+
+if __name__ == "__main__":
+    sentence = "Keep calm and carry on"
+    print(sort_sentence(sentence))
